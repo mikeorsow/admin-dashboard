@@ -1,0 +1,33 @@
+.grid {
+    display: grid;
+}
+
+.container {
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    grid-column: 1;
+    background-color: #1a92d3;
+    color: #fff;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.sidebar .title {
+    font-size: 1.5rem;
+}
+
+.sidebar ul {
+    gap: .5rem
+}
+
+.sidebar li {
+    font-size: 1.25rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
