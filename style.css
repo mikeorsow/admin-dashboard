@@ -6,15 +6,15 @@
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-.grid {
-  display: grid;
-}
 
 .container {
-  grid-template-columns: 1fr 4fr;
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) 4fr;
+  min-height: 100vh;
 }
 
 .left-nav-header {
+    display: grid;
     grid-auto-flow: column;
     align-items: center;
     justify-content: start;
@@ -22,12 +22,16 @@
 }
 
 .sidebar {
+  display: grid;
+  grid-auto-rows: min-content;
+  align-items: start;
   grid-column: 1;
   background-color: #1a92d3;
   color: #fff;
   gap: 3rem;
-  padding: 15px;
+  padding: 15px 25px 0 15px;
   font-weight: 500;
+  grid-row: 1 / 3;
 }
 
 .logo img {
@@ -39,6 +43,7 @@
 }
 
 .sidebar ul {
+  display: grid;
   gap: 1.5rem;
   padding-left: 10px;
 }
@@ -70,3 +75,9 @@ ul {
 .left-nav-settings {
     margin-top: 30px;
 }
+
+.header, .main-content {
+    display: grid;
+    grid-column: 2;
+}
+
