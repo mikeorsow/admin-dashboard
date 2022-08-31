@@ -8,7 +8,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: minmax(min-content, 1fr) 4fr;
+  grid-template-columns: minmax(min-content, 1.1fr) 4fr;
   min-height: 100vh;
 }
 
@@ -164,6 +164,17 @@ ul {
   grid-row: 2;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  gap: 20px;
+}
+
+.header-action {
+  background-color: #1a92d3;
+  color: #fff;
+  border-style: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 1.05rem;
+  font-weight: 500;
 }
 
 .grid {
