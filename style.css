@@ -117,6 +117,15 @@ ul {
   gap: 20px;
 }
 
+.greeting-section p {
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.greeting {
+  gap: 5px
+}
+
 .avatar-big {
   border-radius: 100%;
   max-height: 70px;
