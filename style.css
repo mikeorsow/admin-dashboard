@@ -120,8 +120,19 @@ ul {
   grid-row: 1;
 }
 
+.user-menus {
+  grid-auto-flow: column;
+  justify-content: end;
+  align-items: center;
+  gap: 30px;
+}
+
 .notification-bell {
   height: 25px;
+}
+
+.avatar-small {
+  border-radius: 100%;
 }
 
 .header-right-bottom {
@@ -131,13 +142,7 @@ ul {
   align-items: center;
 }
 
-.user-menus {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: end;
-  align-items: center;
-  gap: 1rem;
-}
+
 
 .grid {
   display: grid;
