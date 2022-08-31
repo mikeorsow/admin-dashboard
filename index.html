@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,77 @@
     <title>Project: Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="left-nav-header">
-                <div class="logo"><img src="/icons/view-dashboard.svg" alt="Four squares mosaic tile icon"></div>
+                <div class="logo"><img class="invert-icon" src="/icons/view-dashboard.svg"
+                        alt="Four squares mosaic tile icon"></div>
                 <div class="title">Dashboard</div>
             </div>
             <ul class="left-nav-pages">
-                <li><img src="/icons/home.svg" alt="House icon">Home</li>
-                <li><img src="/icons/card-account-details-outline.svg" alt="Profile card icon">Profile</li>
-                <li><img src="/icons/message-reply-outline.svg" alt="Chat bubble icon">Messages</li>
-                <li><img src="/icons/history.svg" alt="Clock rewind icon">History</li>
-                <li><img src="/icons/checkbox-marked-circle-plus-outline.svg" alt="Cirle checkbox checked icon">Tasks</li>
-                <li><img src="/icons/account-group.svg" alt="Group of People Icon">Communities</li>
+                <li><img class="invert-icon" src="/icons/home.svg" alt="House icon">Home</li>
+                <li><img class="invert-icon" src="/icons/card-account-details-outline.svg"
+                        alt="Profile card icon">Profile</li>
+                <li><img class="invert-icon" src="/icons/message-reply-outline.svg" alt="Chat bubble icon">Messages</li>
+                <li><img class="invert-icon" src="/icons/history.svg" alt="Clock rewind icon">History</li>
+                <li><img class="invert-icon" src="/icons/checkbox-marked-circle-plus-outline.svg"
+                        alt="Cirle checkbox checked icon">Tasks
+                </li>
+                <li><img class="invert-icon" src="/icons/account-group.svg" alt="Group of People Icon">Communities</li>
             </ul>
             <ul class="left-nav-settings">
-                <li><img src="/icons/cog.svg" alt="Gear Icon">Settings</li>
-                <li><img src="/icons/account-question.svg" alt="Person and question mark icon">Support</li>
-                <li><img src="/icons/shield-lock-outline.svg" alt="Shield with lock inside icon">Privacy</li>
+                <li><img class="invert-icon" src="/icons/cog.svg" alt="Gear Icon">Settings</li>
+                <li><img class="invert-icon" src="/icons/account-question.svg"
+                        alt="Person and question mark icon">Support</li>
+                <li><img class="invert-icon" src="/icons/shield-lock-outline.svg"
+                        alt="Shield with lock inside icon">Privacy
+                </li>
             </ul>
         </div>
-        <div class="header">
-            I'm a header
-        </div>
-        <div class="main-content">
-            I'm all the content
+        <!-- end left-nav section -->
+        <div class="right-side grid">
+            <div class="header">
+                <!-- Left side of header -->
+                <!-- Row 1 -->
+                <div class="header-left-top grid">
+                    <div class="search-section grid">
+                        <img class="search-icon" src="/icons/magnify.svg" alt="Magnifying glass icon">
+                        <input class="search-bar" type="text" name="search" id="search">
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="header-left-bottom grid">
+                    <div class="greeting-section grid">
+                        <div class="avatar-big">[Big Avatar]</div>
+                        <div class="greeting grid">
+                            <p>Hi there,</p>
+                            <h2>Michael Orsow (@morsow)</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right side of header -->
+                <!-- Row 1 -->
+                <div class="header-right-top grid">
+                    <div class="user-menus grid">
+                        <div class="notifications">notification icon</div>
+                        <div class="avatar-small">[sm avatar]</div>
+                        <div class="full-name">Michael Orsow</div>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="header-right-bottom grid">
+                    <button class="header-action">New</button>
+                    <button class="header-action">Upload</button>
+                    <button class="header-action">Share</button>
+                </div>
+            </div>
+            <div class="main-content">
+                I'm all the content
+            </div>
         </div>
     </div>
-    
 </body>
+
 </html>

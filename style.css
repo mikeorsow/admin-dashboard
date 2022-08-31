@@ -6,7 +6,6 @@
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-
 .container {
   display: grid;
   grid-template-columns: minmax(min-content, 1fr) 4fr;
@@ -14,11 +13,11 @@
 }
 
 .left-nav-header {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    justify-content: start;
-    gap: 10px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
 }
 
 .sidebar {
@@ -29,13 +28,13 @@
   background-color: #1a92d3;
   color: #fff;
   gap: 3rem;
-  padding: 15px 25px 0 15px;
+  padding: 15px;
   font-weight: 500;
   grid-row: 1 / 3;
 }
 
 .logo img {
-    height: 3rem;
+  height: 3rem;
 }
 
 .sidebar .title {
@@ -56,14 +55,14 @@
   gap: 25px;
 }
 
-.sidebar img {
-    filter: invert();
-    padding: 0;
-    margin: 0;
+.invert-icon {
+  filter: invert();
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar li img {
-    height: 1.6rem;
+  height: 1.6rem;
 }
 
 ul {
@@ -73,11 +72,74 @@ ul {
 }
 
 .left-nav-settings {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
-.header, .main-content {
-    display: grid;
-    grid-column: 2;
+.right-side {
+  grid-template-rows: 180px;
 }
 
+.header,
+.main-content {
+  display: grid;
+  grid-column: 2;
+}
+
+.header {
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 10px 20px;
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header-left-top {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.header-left-bottom {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.search-section {
+  display: grid;
+  grid-row: 1;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.search-icon{
+  height: 1.5rem;
+}
+
+.greeting-section {
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.header-right-top {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.header-right-bottom {
+  grid-column: 2;
+  grid-row: 2;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.user-menus {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+}
