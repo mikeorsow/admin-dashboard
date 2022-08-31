@@ -92,11 +92,6 @@ ul {
   grid-row: 1;
 }
 
-.header-left-bottom {
-  grid-column: 1;
-  grid-row: 2;
-}
-
 .search-section {
   display: grid;
   grid-row: 1;
@@ -105,14 +100,26 @@ ul {
   align-items: center;
 }
 
-.search-icon{
+.search-icon {
   height: 1.5rem;
+}
+
+.header-left-bottom {
+  grid-column: 1;
+  grid-row: 2;
+  gap: 20px;
 }
 
 .greeting-section {
   grid-auto-flow: column;
   justify-content: start;
   align-items: center;
+  gap: 20px;
+}
+
+.avatar-big {
+  border-radius: 100%;
+  max-height: 70px;
 }
 
 .header-right-top {
@@ -149,8 +156,6 @@ ul {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 }
-
-
 
 .grid {
   display: grid;
