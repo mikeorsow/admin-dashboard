@@ -99,6 +99,7 @@ ul {
 .right-side {
   grid-template-rows: 180px;
   margin: 0px;
+  min-height: 100vh;
 }
 
 .header {
@@ -216,10 +217,13 @@ input:focus {
 }
 
 .main-content {
-  background-color: #e2e8f0;
+  display: grid;
   grid-template-columns: 3fr 1fr;
-  padding: 30px 20px;
+  grid-template-rows: 2rem;
+  align-items: start;
   gap: 10px 24px;
+  background-color: #e2e8f0;
+  padding: 30px 20px;
 }
 
 .main-content-left {
