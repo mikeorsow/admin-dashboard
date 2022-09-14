@@ -18,6 +18,11 @@ h3 {
   font-size: 1.15em;
 }
 
+h4 {
+  font-weight: 500;
+  font-size: .9rem;
+}
+
 .grid {
   display: grid;
 }
@@ -224,7 +229,7 @@ input:focus {
   grid-row: 2;
 }
 
-.project {
+.project-card {
   display: grid;
   grid-template-rows: min-content;
   background-color: white;
@@ -233,11 +238,16 @@ input:focus {
   border-radius: 8px;
   min-height: 150px;
   gap: 4px;
-  box-shadow: 3px 5px 3px rgb(0 0 0 / 6%);
 }
 
-.project p {
-  color: #868686;
+.project-card,
+.announcement-card,
+.trending-card {
+  box-shadow: 3px 5px 3px rgb(0 0 0 / 7%);
+}
+
+.project-card p {
+  color: #808080;
 }
 
 .project-actions {
@@ -249,7 +259,7 @@ input:focus {
   /* height: 20px; */
 }
 
-.project-actions img {
+.project-actions input {
   height: 25px;
 }
 
@@ -259,6 +269,11 @@ input:focus {
   gap: 30px;
 }
 
+.announcement p {
+  font-size: .8rem;
+  color: #808080;
+  padding-top: .2rem;
+}
 .announcement-card, 
 .trending-card {
   display: grid;
@@ -268,7 +283,6 @@ input:focus {
   gap: 1rem;
   height: min-content;
   padding: 32px;
-
 }
 
 .trending-section {
